@@ -13,6 +13,9 @@ public class StringServiceDefaultTest {
         stringService = new StringServiceDefault();
     }
 
+    /**
+     * upperCaseTest runs test on upperCase
+     */
     @Test
     public void upperCaseTest() {
         String inputString = "Hello";
