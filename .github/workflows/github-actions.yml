@@ -1,0 +1,14 @@
+name: Hillel Git Demo Pipeline
+
+jobs:
+  test:
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+      - name: Test code
+        run: mvn --batch-mode test
