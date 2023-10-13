@@ -1,4 +1,6 @@
 name: Hillel Git Demo Pipeline
+on:
+  - push
 
 jobs:
   test:
